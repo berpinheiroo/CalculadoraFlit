@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: monospace
+}
+
+
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: #042940;
+}
+
+header img {
+    width: 140px;
+    height: 90px;
+    margin-top: 1vh;
+    margin-left: 1.5vw
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 85vh;
+    width: 50vw;
+    margin: 0 auto;
+    background-color: #eeeeee
+}
+
+.calculator {
+    height: 45vh;
+    width: 20vw;
+    margin-left: 16vw;
+    background-color: #5a5c68;
+    display: grid;
+    grid-template-areas:
+        "display display display display"
+        "b7 b8 b9 bDivided"
+        "b4 b5 b6 bTimes"
+        "b1 b2 b3 bMinus"
+        "b0 bDot bEqual bPlus"
+}
+
+.display {
+    display: flex;
+    justify-content: end;
+    margin: 1vh;
+    grid-area: display;
+    background-color: #c1d798;
+    width: 95%;
+    height: 8vh;
+    border-radius: 0.5em;
+}
+
+.display span {
+    font-size: 3.5em;
+    color: #ffffff;
+    margin-right: 1vw;
+}
+
+button {
+    margin-left: 0.5vw;
+    width: 60px;
+    height: 60px;
+    border-radius: 0.5em;
+    font-size: 3.5em;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.number {
+    background-color: #3d4049;
+}
+
+.operation {
+    background-color: #bcc0c7;
+}
+
+.b1 {
+    grid-area: b1;
+}
+
+.b2 {
+    grid-area: b2;
+}
+
+.b3 {
+    grid-area: b3;
+}
+
+.b4 {
+    grid-area: b4;
+}
+
+.b5 {
+    grid-area: b5;
+}
+
+.b6 {
+    grid-area: b6;
+}
+
+.b7 {
+    grid-area: b7;
+}
+
+.b8 {
+    grid-area: b8;
+}
+
+.b9 {
+    grid-area: b9;
+}
+
+.b0 {
+    grid-area: b0;
+}
+
+.bDot {
+    grid-area: bDot;
+}
+
+.bPlus {
+    grid-area: bPlus;
+}
+
+.bMinus {
+    grid-area: bMinus;
+}
+
+.bDivided {
+    grid-area: bDivided;
+}
+
+.bTimes {
+    grid-area: bTimes;
+}
+
+.bEqual {
+    grid-area: bEqual;
+}
+
+
